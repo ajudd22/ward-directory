@@ -4,7 +4,7 @@
   <div class = "quote">
     <p>Life is about learning to dance in the rain</p>
     <br>
-    <h6>GITHUB LINK</h6>
+    <h6>git@github.com:ajudd22/ward-directory.git</h6>
   </div>
 </div>
 </div>
