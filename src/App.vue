@@ -1,32 +1,109 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<div id="app">
+  <h2>Welcome to the 1st Ward!</h2>
+  <div id="menu">
+      <router-link to="/ScriptureStudyPage">
+        <div class="menu-item scriptureStudy">
+          <img src="/images/scriptures.jpeg">
+          <p>Scripture Study</p>
+        </div>
+      </router-link>
+      <router-link to="/">
+        <img id = "homeimg" src="/images/prayer.jpg">
+      </router-link>
+      <router-link to="/DirectoryPage">
+        <div class="menu-item directory">
+          <img src="/images/churchlogo.jpeg">
+          <p>Ward Directory</p>
+        </div>
+      </router-link>
     </div>
-    <router-view/>
-  </div>
+  <router-view />
+</div>
 </template>
 
+<script>
+
+export default {
+  name: 'App',
+  components: {
+
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 10px;
+  background-color:#a6e5ff;
+
+}
+#app{
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  flex-direction: row;
+  height: 250px;
+}
+
+#menu a {
+  color: #B84901;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+
+}
+h2{
+  font-size: 36px;
+  font-family: monospace;
   text-align: center;
-  color: #2c3e50;
+}
+#heading {
+  display: flex;
+  margin-right: 20%;
+  margin-left: 20%;
+  justify-content: center;
 }
 
-#nav {
-  padding: 30px;
+#homeimg{
+  width: 100%;
+}
+img{
+border-radius: 15%;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.directory{
+  justify-content: space-between;
+}
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  height: 40%;
+  width:50%;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+
+.menu-item p {
+  margin: 0px;
+}
+.menu-item img {
+  width: 100%;
 }
 </style>
