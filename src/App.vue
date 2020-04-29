@@ -18,7 +18,10 @@
         </div>
       </router-link>
     </div>
-  <router-view />
+    <router-link to="/LeadershipPage">
+      <h5> Contact current leaders</h5>
+    </router-link>
+  <router-view/>
 </div>
 </template>
 
@@ -55,7 +58,6 @@ justify-content: center;
   align-items: center;
   flex-wrap:wrap;
   flex-direction: row;
-  height: 250px;
 }
 
 #menu a {
@@ -98,7 +100,9 @@ border-radius: 15%;
   height: 40%;
   width:50%;
 }
-
+h5{
+text-align: center;
+}
 
 .menu-item p {
   margin: 0px;

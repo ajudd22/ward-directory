@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import ScriptureStudyPage from '../views/ScriptureStudyPage.vue'
 import DirectoryPage from '../views/DirectoryPage.vue'
+import LeadershipPage from '../views/LeadershipPage.vue'
 
 Vue.use(VueRouter)
 
@@ -20,13 +21,16 @@ const router = new VueRouter({
     path: '/ScriptureStudyPage',
     name: 'ScriptureStudyPage',
     component: ScriptureStudyPage,
-//    component: () => import('../views/ScriptureStudyPage.vue')
   },
   {
     path: '/DirectoryPage',
     name: 'DirectoryPage',
     component: DirectoryPage,
-//    component: () => import('../views/DirectoryPage.vue')
+  },
+  {
+    path: '/LeadershipPage',
+    name: 'LeadershipPage',
+    component: LeadershipPage,
   }
 ]
 
